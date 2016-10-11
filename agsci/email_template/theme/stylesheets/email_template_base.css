@@ -69,7 +69,12 @@ table.head-wrap { width: 100%;}
 table.body-wrap { width: 100%;}
 
 
-#email_right_body {
+#email_full_body {
+    padding: 15px;
+    margin: 15px 0;
+}
+
+#email_right_column {
     background-color: #EBEBEB;
 }
 
@@ -112,6 +117,7 @@ h2, h3 {
 .collapse { margin:0!important;}
 
 p, ul { 
+    margin-top: 0;
 	margin-bottom: 10px; 
 	font-weight: normal; 
 	font-size:14px; 
@@ -189,7 +195,7 @@ ul li {
 
 	div[class="column"] { width: auto!important; float:none!important;}
 	
-    #email_right_body {
+    #email_right_column {
         background-color: transparent !important;
     }
     
