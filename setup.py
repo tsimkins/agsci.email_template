@@ -26,6 +26,12 @@ setup(name='agsci.email_template',
     zip_safe=False,
     install_requires=[
       'setuptools',
+      'plone.app.dexterity',
+      'plone.app.contenttypes',
+      'plone.app.theming',
+      'premailer',
+      'Products.WebServerAuth',
+      'BeautifulSoup',
       # -*- Extra requirements: -*-
       ],
     entry_points="""

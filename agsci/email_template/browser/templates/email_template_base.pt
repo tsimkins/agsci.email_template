@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="agsci.email_template">
+<body>
+
+    <metal:main fill-slot="content-core">
+        <h2>Email Image</h2>
+        <div class="field">
+            <div id="email_image">
+                <img tal:attributes="src string:${context/absolute_url}/@@images/image/email;
+                                     alt context/image_caption|nothing"  />
+            </div>
+        </div>
+
+        <tal:fields tal:repeat="i view/fields">
+            <div class="field">
+                <h2 tal:content="i/title" />
+                <p tal:content="i/description"
+                   tal:condition="i/description" />
+                <div tal:attributes="id string:${i/name};">
+                    <tal:data tal:condition="i/structure" tal:replace="structure i/value/output" />
+                    <tal:data tal:condition="not: i/structure" tal:replace="i/value" />
+                </div>
+            </div>
+        </tal:fields>
+
+        <div class="hiddenStructure">
+            <div id="email_unsubscribe_link">
+                <a tal:attributes="href context/email_unsubscribe">Unsubscribe</a>
+            </div>
+        </div>
+
+        <div id="email_copyright" class="hiddenStructure">
+            <p> Copyright &copy; <span tal:replace="view/current_year" /> Penn 
+                State College of Agricultural 
+                Sciences <br/>University Park, PA 16802</p>        
+        </div>
+
+    </metal:main>
+
+</body>
+</html>
