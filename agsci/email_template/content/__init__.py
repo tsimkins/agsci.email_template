@@ -24,30 +24,37 @@ class IEmailTemplateBase(model.Schema):
     
     email_lead = RichText(
         title=u"Lead text",
+        required=True
     )
     
     email_callout = RichText(
         title=u"Callout",
+        required=False
     )
 
     email_full_body = RichText(
         title=u"Full Width Body Text",
+        required=False
     )
     
-    email_left_body = RichText(
-        title=u"Left Body Text",
+    email_left_column = RichText(
+        title=u"Left Column Text",
+        required=False
     )
     
-    email_right_body = RichText(
-        title=u"Right Body Text",
+    email_right_column = RichText(
+        title=u"Right Column Text",
+        required=False
     )
 
     email_footer = RichText(
         title=u"Footer Text",
+        required=False        
     )
 
     email_unsubscribe = schema.TextLine(
         title=u"Unsubscribe Link",
+        required=True
     )
 
 class EmailTemplateBase(Container):

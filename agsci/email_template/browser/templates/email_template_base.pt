@@ -8,6 +8,13 @@
 <body>
 
     <metal:main fill-slot="content-core">
+    
+        <h2>Instructions</h2>
+        <ul>
+            <li>Click the "Edit" tab above, and edit the fields in this email.</li>
+            <li>To preview the email, go to the <a tal:attributes="href view/logged_out">Logged out view</a>.</li>
+            <li>To send the email [tbd]</li>
+        </ul>
         <h2>Email Image</h2>
         <div class="field">
             <div id="email_image">

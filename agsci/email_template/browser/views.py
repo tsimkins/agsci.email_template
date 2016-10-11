@@ -31,6 +31,9 @@ class EmailTemplateBaseView(BrowserView):
         return getMultiAdapter((self.context, self.request),
                                 name=u'plone_portal_state')
     
+    def logged_out(self):
+        return self.context.absolute_url().replace('https://', 'http://')
+
     def current_year(self):
         return DateTime().year()
 
