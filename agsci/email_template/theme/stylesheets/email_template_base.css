@@ -54,23 +54,10 @@ p.btn a {
 	color: #2BA6CB;
 }
 
-a.fb { background-color: #3B5998!important; }
-a.tw { background-color: #1daced!important; }
-a.gp { background-color: #DB4A39!important; }
-a.ms { background-color: #000!important; }
-
-.sidebar .soc-btn { 
-	display:block;
-	width:100%;
-}
-
 /* ------------------------------------- 
 		HEADER 
 ------------------------------------- */
 table.head-wrap { width: 100%;}
-
-.header.container table td.logo { padding: 15px; }
-.header.container table td.label { padding: 15px; padding-left:0px;}
 
 .header img {
     max-width: 400px;
@@ -91,7 +78,7 @@ table.body-wrap { width: 100%;}
 ------------------------------------- */
 table.footer-wrap { width: 100%;	clear:both!important;
 }
-.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
+.footer-wrap .container td.content p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
 .footer-wrap .container td.content p {
 	font-size:10px;
 	font-weight: bold;
@@ -117,6 +104,10 @@ h1 { font-weight:700; font-size: 28px;}
 h2 { font-weight:700; font-size: 19px;}
 h3 { font-weight:600; font-size: 16px;}
 h4 { font-weight:500; font-size: 14px;}
+
+h2, h3 {
+    margin-top: 4px;
+}
 
 .collapse { margin:0!important;}
 
@@ -156,7 +147,7 @@ ul li {
 
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
-	padding:15px;
+	padding:15px 0;
 	max-width:600px;
 	margin:0 auto;
 	display:block; 
