@@ -31,7 +31,7 @@ a { color: #2BA6CB;}
 p.btn a {
 	text-decoration:none;
 	color: #FFF;
-	background-color: #1F4B7B;
+	background-color: #BC3204;
 	padding:10px 16px;
 	font-weight:bold;
 	margin-right:10px;
@@ -42,7 +42,7 @@ p.btn a {
 
 .callout {
 	padding:8px 15px;
-	background-color:#ECF8FF;
+	background-color:#fff0ad;
 }
 
 .callout p {
@@ -61,6 +61,10 @@ table.head-wrap { width: 100%;}
 
 .header img {
     max-width: 400px;
+}
+
+.header .tagline {
+    padding-right: 15px;
 }
 
 /* ------------------------------------- 
