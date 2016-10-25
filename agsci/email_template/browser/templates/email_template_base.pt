@@ -16,14 +16,14 @@
             <li>To send the email [tbd]</li>
         </ul>
 
-        <h2>Email Image</h2>
         <div class="field">
+            <h2>Email Image</h2>
             <div id="email_image">
                 <img tal:attributes="src string:${context/absolute_url}/@@images/image/email;
-                                     alt context/image_caption|nothing"  />
+                                        alt context/image_caption|nothing"  />
             </div>
         </div>
-
+        
         <tal:fields tal:repeat="i view/fields">
             <div class="field">
                 <h2 tal:content="i/title" />
