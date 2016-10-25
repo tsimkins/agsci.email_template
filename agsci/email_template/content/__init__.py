@@ -5,7 +5,7 @@ from z3c.form.interfaces import IAddForm, IEditForm
 from zope import schema
 from plone.app.textfield import RichText
 from zope.interface import invariant, Invalid
-
+from plone.app.contenttypes.behaviors.leadimage import ILeadImage
 
 from agsci.email_template import EmailTemplateMessageFactory as _
 
@@ -16,7 +16,10 @@ def is_non_blank_string(v):
     return False
 
 # Parent schema class for all products, and product contained content
-class IEmailTemplateBase(model.Schema):
+class IEmailTemplateBase(model.Schema, ILeadImage):
+
+    form.order_after(image="email_lead")
+    form.order_after(image_caption="image")
 
     title = schema.TextLine(
         title=_(u'Title'),

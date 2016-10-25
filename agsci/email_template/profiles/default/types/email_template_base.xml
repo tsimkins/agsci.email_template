@@ -22,7 +22,6 @@
  <property name="klass">agsci.email_template.content.EmailTemplateBase</property>
  <property name="behaviors">
    <element value="plone.app.content.interfaces.INameFromTitle"/>
-   <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
  </property>
  
  <property name="schema">agsci.email_template.content.IEmailTemplateBase</property>
