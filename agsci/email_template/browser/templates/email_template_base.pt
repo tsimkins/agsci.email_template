@@ -69,10 +69,6 @@
                     background-image:url('${context/email_tracking_base_url}?f&d=%%emailaddr%%&t=${context/email_tracking_custom_code}');
                 }
 
-                #_t {
-                    background-image:url('${context/email_tracking_base_url}?f&d=%%emailaddr%%&t=${context/email_tracking_custom_code}');
-                }
-
                 #MailContainerBody #_t {
                     background-image:url('${context/email_tracking_base_url}?f&d=%%emailaddr%%&t=${context/email_tracking_custom_code}');
                 }
