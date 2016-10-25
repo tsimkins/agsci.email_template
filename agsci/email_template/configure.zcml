@@ -6,6 +6,9 @@
 
     <five:registerPackage package="." initialize=".initialize" />
 
+    <!-- Enable Chameleon -->
+    <include package="five.pt" />
+
     <genericsetup:registerProfile
         name="default"
         title="agsci.email_template"
