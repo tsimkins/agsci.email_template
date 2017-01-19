@@ -1,0 +1,86 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="agsci.email_template">
+<body>
+
+    <metal:main fill-slot="content-core">
+
+        <h2>Instructions</h2>
+        <ul>
+            <li>Click the "Edit" tab above, and edit the fields in this email.</li>
+            <li>To preview the email, go to the <a tal:attributes="href view/logged_out">Logged out view</a>.</li>
+            <li>To send the email [tbd]</li>
+        </ul>
+
+        <div class="field">
+            <h2>Email Image</h2>
+            <div id="email_image">
+                <img tal:attributes="src string:${context/absolute_url}/@@images/image/email;
+                                        alt context/image_caption|nothing"  />
+            </div>
+        </div>
+        
+        <tal:fields tal:repeat="i view/fields">
+            <div class="field">
+                <h2 tal:content="i/title" />
+                <p tal:content="i/description"
+                   tal:condition="i/description" />
+                <div tal:attributes="id string:${i/name};">
+                    <tal:data tal:condition="i/structure" tal:replace="structure i/value/output" />
+                    <tal:data tal:condition="not: i/structure" tal:replace="i/value" />
+                </div>
+            </div>
+        </tal:fields>
+
+        <div class="hiddenStructure">
+            <div id="email_unsubscribe_link">
+                <a tal:attributes="href context/email_unsubscribe">Unsubscribe</a>
+            </div>
+        </div>
+
+        <div id="email_copyright" class="hiddenStructure">
+            <p> Copyright &copy; <span tal:replace="view/current_year" /> Penn
+                State College of Agricultural
+                Sciences <br/>University Park, PA 16802</p>
+        </div>
+
+        <div id="email_tracking" tal:condition="context/email_tracking_enable|nothing">
+
+            <style data-ignore-inlining data-premailer="ignore" id="litmus">
+                @media print {
+                    #_t {
+                        background-image: url('${context/email_tracking_base_url}?p&d=%%emailaddr%%&t=${context/email_tracking_custom_code}');
+                    }
+                }
+
+                div.OutlookMessageHeader {
+                    background-image:url('${context/email_tracking_base_url}?f&d=%%emailaddr%%&t=${context/email_tracking_custom_code}');
+                }
+
+                table.moz-email-headers-table {
+                    background-image:url('${context/email_tracking_base_url}?f&d=%%emailaddr%%&t=${context/email_tracking_custom_code}');
+                }
+
+                blockquote #_t {
+                    background-image:url('${context/email_tracking_base_url}?f&d=%%emailaddr%%&t=${context/email_tracking_custom_code}');
+                }
+
+                #MailContainerBody #_t {
+                    background-image:url('${context/email_tracking_base_url}?f&d=%%emailaddr%%&t=${context/email_tracking_custom_code}');
+                }
+            </style>
+
+            <div id="_t"></div>
+
+            <img src="${context/email_tracking_base_url}?d=%%emailaddr%%&t=${context/email_tracking_custom_code}" width="1" height="1" border="0" />
+
+        </div>
+
+    </metal:main>
+
+</body>
+</html>

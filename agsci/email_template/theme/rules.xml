@@ -3,33 +3,68 @@
 <rules
     xmlns="http://namespaces.plone.org/diazo"
     xmlns:css="http://namespaces.plone.org/diazo/css"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    css:if-content="body.portaltype-email_template_base">
-
-    <theme href="email_template_base.html" />
-
-    <notheme css:if-not-content="body.userrole-anonymous"/>
-
-    <replace css:theme-children="title" css:content-children="#email_heading"/>
-
-    <replace css:theme-children="#email_heading" css:content-children="#email_heading"/>
-    <replace css:theme-children="#email_lead" css:content-children="#email_lead"/>
-    <replace css:theme-children="#email_image" css:content-children="#email_image"/>
-    <replace css:theme-children="#email_callout" css:content-children="#email_callout"/>
-    <replace css:theme-children="#email_full_body" css:content-children="#email_full_body"/>
-    <replace css:theme-children="#email_left_column" css:content-children="#email_left_column"/>
-    <replace css:theme-children="#email_right_column" css:content-children="#email_right_column"/>
-    <replace css:theme-children="#email_footer" css:content-children="#email_footer"/>
-    <replace css:theme-children="#email_copyright" css:content-children="#email_copyright"/>
-    <replace css:theme-children="#email_unsubscribe_link" css:content-children="#email_unsubscribe_link"/>
-    <replace css:theme="#email_tracking" css:content-children="#email_tracking"/>
-
-    <drop css:theme="#email_image" css:if-not-content="#email_image"/>
-    <drop css:theme="#email_callout" css:if-not-content="#email_callout"/>
-    <drop css:theme="#email_full_body" css:if-not-content="#email_full_body"/>
-    <drop css:theme="#email_left_column" css:if-not-content="#email_left_column"/>
-    <drop css:theme="#email_right_column" css:if-not-content="#email_right_column"/>
-    <drop css:theme="#email_footer" css:if-not-content="#email_footer"/>
-    <drop css:theme="#email_tracking" css:if-not-content="#email_tracking"/>
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+ 
+    <rules
+        css:if-content="body.portaltype-email_template_base">
+    
+        <theme href="email_template_base.html" />
+    
+        <notheme css:if-not-content="body.userrole-anonymous"/>
+    
+        <replace css:theme-children="title" css:content-children="#email_heading"/>
+    
+        <replace css:theme-children="#email_heading" css:content-children="#email_heading"/>
+        <replace css:theme-children="#email_lead" css:content-children="#email_lead"/>
+        <replace css:theme-children="#email_image" css:content-children="#email_image"/>
+        <replace css:theme-children="#email_callout" css:content-children="#email_callout"/>
+        <replace css:theme-children="#email_full_body" css:content-children="#email_full_body"/>
+        <replace css:theme-children="#email_left_column" css:content-children="#email_left_column"/>
+        <replace css:theme-children="#email_right_column" css:content-children="#email_right_column"/>
+        <replace css:theme-children="#email_footer" css:content-children="#email_footer"/>
+        <replace css:theme-children="#email_copyright" css:content-children="#email_copyright"/>
+        <replace css:theme-children="#email_unsubscribe_link" css:content-children="#email_unsubscribe_link"/>
+        <replace css:theme="#email_tracking" css:content-children="#email_tracking"/>
+    
+        <drop css:theme="#email_image" css:if-not-content="#email_image"/>
+        <drop css:theme="#email_callout" css:if-not-content="#email_callout"/>
+        <drop css:theme="#email_full_body" css:if-not-content="#email_full_body"/>
+        <drop css:theme="#email_left_column" css:if-not-content="#email_left_column"/>
+        <drop css:theme="#email_right_column" css:if-not-content="#email_right_column"/>
+        <drop css:theme="#email_footer" css:if-not-content="#email_footer"/>
+        <drop css:theme="#email_tracking" css:if-not-content="#email_tracking"/>
+    
+    </rules>
+    
+    <rules
+        css:if-content="body.portaltype-email_template_base_extension">
+    
+        <theme href="email_template_base_extension.html" />
+    
+        <notheme css:if-not-content="body.userrole-anonymous"/>
+    
+        <replace css:theme-children="title" css:content-children="#email_heading"/>
+    
+        <replace css:theme-children="#email_heading" css:content-children="#email_heading"/>
+        <replace css:theme-children="#email_lead" css:content-children="#email_lead"/>
+        <replace css:theme-children="#email_image" css:content-children="#email_image"/>
+        <replace css:theme-children="#email_callout" css:content-children="#email_callout"/>
+        <replace css:theme-children="#email_full_body" css:content-children="#email_full_body"/>
+        <replace css:theme-children="#email_left_column" css:content-children="#email_left_column"/>
+        <replace css:theme-children="#email_right_column" css:content-children="#email_right_column"/>
+        <replace css:theme-children="#email_footer" css:content-children="#email_footer"/>
+        <replace css:theme-children="#email_copyright" css:content-children="#email_copyright"/>
+        <replace css:theme-children="#email_unsubscribe_link" css:content-children="#email_unsubscribe_link"/>
+        <replace css:theme="#email_tracking" css:content-children="#email_tracking"/>
+    
+        <drop css:theme="#email_image" css:if-not-content="#email_image"/>
+        <drop css:theme="#email_callout" css:if-not-content="#email_callout"/>
+        <drop css:theme="#email_full_body" css:if-not-content="#email_full_body"/>
+        <drop css:theme="#email_left_column" css:if-not-content="#email_left_column"/>
+        <drop css:theme="#email_right_column" css:if-not-content="#email_right_column"/>
+        <drop css:theme="#email_footer" css:if-not-content="#email_footer"/>
+        <drop css:theme="#email_tracking" css:if-not-content="#email_tracking"/>
+    
+    </rules>
 
 </rules>

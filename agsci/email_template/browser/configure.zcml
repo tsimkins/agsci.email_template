@@ -14,5 +14,14 @@
         permission="zope2.View"
     />
 
+    <!-- Email Template Extension (Base) -->
+    <browser:page
+        for="agsci.email_template.content.IEmailTemplateBaseExtension"
+        name="view"
+        class=".views.EmailTemplateBaseExtensionView"
+        template="templates/email_template_base_extension.pt"
+        permission="zope2.View"
+    />
+
 
 </configure>

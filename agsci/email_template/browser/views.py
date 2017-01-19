@@ -129,3 +129,7 @@ class EmailTemplateBaseView(BrowserView):
             return transformed_html
         else:
             return super(EmailTemplateBaseView, self).__call__()
+
+
+class EmailTemplateBaseExtensionView(EmailTemplateBaseView):
+    pass
