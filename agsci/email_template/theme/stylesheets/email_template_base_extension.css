@@ -68,13 +68,11 @@ p.btn a {
 		HEADER 
 ------------------------------------- */
 table.head-wrap { width: 100%;
-    background-image: url(++theme++agsci_email_template_theme/images/extension-email-header-background.png);
-    background-repeat: repeat-x;
-    background-position: bottom center;
+    border-bottom: 10px #EBEBEB solid;
 }
 
 td.header .content {
-    padding: 5px 0;
+    padding: 5px 0 0 0;
 }
 
 .header img {
@@ -120,6 +118,7 @@ table.footer-wrap-main {
     background-color: #262833 !important;
 }
 
+table.footer-wrap a,
 table.footer-wrap a:link,
 table.footer-wrap a:visited,
 table.footer-wrap a:active {
