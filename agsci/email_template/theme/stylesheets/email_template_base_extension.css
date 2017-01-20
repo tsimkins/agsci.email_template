@@ -140,8 +140,13 @@ table.footer-wrap a:hover {
 }
 
 #email_footer p,
-#email_statements p {
-    font-size: 12px;
+#email_footer ul,
+#email_copyright p,
+#email_copyright ul,
+#email_statements p,
+#email_statements ul {
+    color: #DDDDDD;
+
 }
 
 /* ------------------------------------- 
