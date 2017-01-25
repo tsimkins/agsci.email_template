@@ -137,6 +137,7 @@ table.footer-wrap a:hover {
 
 #email_footer, #email_copyright, #email_statements {
     text-align: center;
+    color: #DDDDDD;
 }
 
 #email_footer p,
