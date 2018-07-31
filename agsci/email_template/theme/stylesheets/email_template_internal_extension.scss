@@ -1,0 +1,11 @@
+/* Extension CSS Defaults */
+
+@import 'email_template_base_extension';
+
+td.header, .header {
+
+    img {
+        max-width: 400px;
+    }
+
+}

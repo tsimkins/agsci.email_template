@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="agsci.email_template">
+<body>
+
+    <metal:main fill-slot="content-core">
+
+        <metal:content-core
+            metal:use-macro="context/@@email_template_base_extension/macros/content-core">
+
+            <metal:email_footer_additional metal:fill-slot="email_footer_additional">
+                <p>
+                    This email is intended for internal communication to the College of
+                    Agricultural Sciences only. Please do not forward outside of our
+                    organization.
+                </p>
+            </metal:email_footer_additional>
+
+        </metal:content-core>
+    </metal:main>
+
+</body>
+</html>

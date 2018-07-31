@@ -1,21 +1,21 @@
-/* ------------------------------------- 
-		GLOBAL 
+/* -------------------------------------
+		GLOBAL
 ------------------------------------- */
-* { 
+* {
 	margin:0;
 	padding:0;
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-img { 
+img {
 	max-width: 100%;
 	width: 100%;
 }
 
-/* ------------------------------------- 
-		ELEMENTS 
+/* -------------------------------------
+		ELEMENTS
 ------------------------------------- */
-a { 
+a {
     font-weight: bold;
     color: #0F1328;
 }
@@ -54,10 +54,10 @@ p.btn a {
     }
 }
 
-/* ------------------------------------- 
-		HEADER 
+/* -------------------------------------
+		HEADER
 ------------------------------------- */
-table.head-wrap { 
+table.head-wrap {
     width: 100%;
     border-bottom: 10px #EBEBEB solid;
 }
@@ -71,16 +71,16 @@ td.header, .header {
     img {
         max-width: 321px;
     }
-    
+
     .tagline {
         padding-right: 15px;
     }
 }
 
-/* ------------------------------------- 
-		BODY 
+/* -------------------------------------
+		BODY
 ------------------------------------- */
-table.body-wrap { 
+table.body-wrap {
     width: 100%;
 }
 
@@ -99,10 +99,10 @@ table.body-wrap {
     background-color: #ECECEC;
 }
 
-/* ------------------------------------- 
-		FOOTER 
+/* -------------------------------------
+		FOOTER
 ------------------------------------- */
-table.footer-wrap { 
+table.footer-wrap {
     width: 100%;
     clear:both;
     background-color: #1A1E30;
@@ -119,7 +119,7 @@ table.footer-wrap {
         color: #9FDBFF;
     }
 
-    .container td.content p { 
+    .container td.content p {
         border-top: 1px solid #D7D7D7;
         padding-top:15px;
     	font-size:12px;
@@ -129,7 +129,7 @@ table.footer-wrap {
 
 }
 
-table.footer-wrap-main { 
+table.footer-wrap-main {
     background-color: #262833 ;
 }
 
@@ -146,8 +146,8 @@ table.footer-wrap-main {
 }
 
 
-/* ------------------------------------- 
-		TYPOGRAPHY 
+/* -------------------------------------
+		TYPOGRAPHY
 ------------------------------------- */
 body  {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -160,22 +160,22 @@ body  {
 	height: 100%;
 }
 
-h1 { 
+h1 {
     font-weight:700;
     font-size: 28px;
 }
 
-h2 { 
+h2 {
     font-weight:700;
     font-size: 19px;
 }
 
-h3 { 
+h3 {
     font-weight:600;
     font-size: 16px;
 }
 
-h4 { 
+h4 {
     font-weight:500;
     font-size: 14px;
 }
@@ -184,12 +184,12 @@ h2, h3 {
     margin-top: 4px;
 }
 
-.collapse { 
+.collapse {
     margin:0;
 	padding:0;
 }
 
-p, ul { 
+p, ul {
     margin-top: 0;
 	margin-bottom: 10px;
 	font-weight: normal;
@@ -207,19 +207,19 @@ ul {
     }
 }
 
-div.lead p { 
+div.lead p {
     font-size:17px;
 }
 
-p.last { 
+p.last {
     margin-bottom:0px;
 }
 
 
 
-/* --------------------------------------------------- 
+/* ---------------------------------------------------
 		RESPONSIVENESS
-		Nuke it from orbit. It's the only way to be sure. 
+		Nuke it from orbit. It's the only way to be sure.
 ------------------------------------------------------ */
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
@@ -240,7 +240,7 @@ p.last {
 }
 
 /* Let's make sure tables in the content area are 100% wide */
-.content table { 
+.content table {
     width: 100%;
 }
 
@@ -251,17 +251,17 @@ p.last {
 	float:left;
 }
 
-.column tr td { 
+.column tr td {
     padding: 15px;
 }
 
-.column-wrap { 
+.column-wrap {
 	padding:0 0 12px 0;
 	margin:0 auto;
 	max-width:600px;
 }
 
-.column table { 
+.column table {
     width:100%;
 }
 
@@ -272,26 +272,26 @@ p.last {
 }
 
 /* Be sure to place a .clear element after each set of columns, just to be safe */
-.clear { 
+.clear {
     display: block;
     clear: both;
 }
 
-/* ------------------------------------------- 
+/* -------------------------------------------
 		PHONE
 		For clients that support media queries.
-		Nothing fancy. 
+		Nothing fancy.
 -------------------------------------------- */
 @media only screen and (max-width: 600px) {
 	
-	a[class="btn"] { 
+	a[class="btn"] {
 	   display:block;
         margin-bottom:10px;
         background-image:none;
         margin-right:0;
     }
 
-	div[class="column"] { 
+	div[class="column"] {
 	   width: auto;
         float:none;
     }
@@ -299,7 +299,7 @@ p.last {
     #email_right_column {
         background-color: transparent ;
     }
-    
+
     .hide_mobile {
         display: none;
     }

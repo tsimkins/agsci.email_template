@@ -94,10 +94,14 @@ class IEmailTemplateBase(model.Schema, ILeadImage):
 class EmailTemplateBase(Container):
     pass
 
-
 class IEmailTemplateBaseExtension(IEmailTemplateBase):
     pass
 
-
 class EmailTemplateBaseExtension(EmailTemplateBase):
+    pass
+
+class IEmailTemplateInternalExtension(IEmailTemplateBaseExtension):
+    pass
+
+class EmailTemplateInternalExtension(EmailTemplateBaseExtension):
     pass
