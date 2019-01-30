@@ -20,6 +20,7 @@ class IEmailTemplateBase(model.Schema, ILeadImage):
 
     form.order_after(image="email_lead")
     form.order_after(image_caption="image")
+    form.order_after(email_image_size="image_caption")
 
     title = schema.TextLine(
         title=_(u'Title'),
@@ -81,6 +82,13 @@ class IEmailTemplateBase(model.Schema, ILeadImage):
         required=False
     )
 
+    email_image_size = schema.Choice(
+        title=_(u"Image Width"),
+        values=(u"Full", u"Half"),
+        required=True,
+        default=u"Full",
+    )
+
     @invariant
     def email_tracking(data):
         if data.email_tracking_enable:
@@ -94,10 +102,16 @@ class IEmailTemplateBase(model.Schema, ILeadImage):
 class EmailTemplateBase(Container):
     pass
 
+class IEmailTemplateBaseCollege(IEmailTemplateBase):
+    pass
+
 class IEmailTemplateBaseExtension(IEmailTemplateBase):
     pass
 
 class EmailTemplateBaseExtension(EmailTemplateBase):
+    pass
+
+class EmailTemplateBaseCollege(EmailTemplateBase):
     pass
 
 class IEmailTemplateInternalExtension(IEmailTemplateBaseExtension):

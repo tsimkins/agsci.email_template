@@ -27,6 +27,22 @@ class EmailTemplateBaseView(BrowserView):
         return self._portal_state.anonymous()
 
     @property
+    def email_image_class(self):
+        width = getattr(self.context, 'email_image_size', None)
+
+        if width:
+            return 'image-%s' % width.lower()
+
+    @property
+    def has_email_image(self):
+        image = getattr(self.context, 'image', None)
+
+        if image and hasattr(image, 'size') and image > 0:
+            return True
+
+        return False
+
+    @property
     def _portal_state(self):
         return getMultiAdapter((self.context, self.request),
                                 name=u'plone_portal_state')

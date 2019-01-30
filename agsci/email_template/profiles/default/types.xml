@@ -5,6 +5,7 @@
 
     <object name="email_template_base" meta_type="Dexterity FTI"/>
     <object name="email_template_base_extension" meta_type="Dexterity FTI"/>
+    <object name="email_template_base_college" meta_type="Dexterity FTI"/>
     <object name="email_template_internal_extension" meta_type="Dexterity FTI"/>
 
 </object>

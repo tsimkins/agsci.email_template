@@ -1,30 +1,38 @@
-/* ------------------------------------- 
-		GLOBAL 
+/* -------------------------------------
+		GLOBAL
 ------------------------------------- */
-* { 
+* {
 	margin:0;
 	padding:0;
 }
 * { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-img { 
-	max-width: 100%; 
+img {
+	max-width: 100%;
 	width: 100%;
 }
+
+img.image-half {
+	max-width: 300px;
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+}
+
 .collapse {
 	margin:0;
 	padding:0;
 }
 body {
-	-webkit-font-smoothing:antialiased; 
-	-webkit-text-size-adjust:none; 
-	width: 100%!important; 
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust:none;
+	width: 100%!important;
 	height: 100%;
 }
 
 
-/* ------------------------------------- 
-		ELEMENTS 
+/* -------------------------------------
+		ELEMENTS
 ------------------------------------- */
 a { color: #2BA6CB;}
 
@@ -54,8 +62,8 @@ p.btn a {
 	color: #2BA6CB;
 }
 
-/* ------------------------------------- 
-		HEADER 
+/* -------------------------------------
+		HEADER
 ------------------------------------- */
 table.head-wrap { width: 100%;}
 
@@ -67,8 +75,8 @@ table.head-wrap { width: 100%;}
     padding-right: 15px;
 }
 
-/* ------------------------------------- 
-		BODY 
+/* -------------------------------------
+		BODY
 ------------------------------------- */
 table.body-wrap { width: 100%;}
 
@@ -82,8 +90,8 @@ table.body-wrap { width: 100%;}
     background-color: #EBEBEB;
 }
 
-/* ------------------------------------- 
-		FOOTER 
+/* -------------------------------------
+		FOOTER
 ------------------------------------- */
 table.footer-wrap { width: 100%;	clear:both!important;
 }
@@ -102,8 +110,8 @@ table.footer-wrap { width: 100%;	clear:both!important;
     font-size: 10px;
 }
 
-/* ------------------------------------- 
-		TYPOGRAPHY 
+/* -------------------------------------
+		TYPOGRAPHY
 ------------------------------------- */
 body  {
 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
@@ -120,11 +128,11 @@ h2, h3 {
 
 .collapse { margin:0!important;}
 
-p, ul { 
+p, ul {
     margin-top: 0;
-	margin-bottom: 10px; 
-	font-weight: normal; 
-	font-size:14px; 
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-size:14px;
 	line-height:1.6;
 }
 
@@ -142,9 +150,9 @@ ul li {
 }
 
 
-/* --------------------------------------------------- 
+/* ---------------------------------------------------
 		RESPONSIVENESS
-		Nuke it from orbit. It's the only way to be sure. 
+		Nuke it from orbit. It's the only way to be sure.
 ------------------------------------------------------ */
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
@@ -160,7 +168,7 @@ ul li {
 	padding:15px 0;
 	max-width:600px;
 	margin:0 auto;
-	display:block; 
+	display:block;
 }
 
 /* Let's make sure tables in the content area are 100% wide */
@@ -173,9 +181,9 @@ ul li {
 	float:left;
 }
 .column tr td { padding: 15px; }
-.column-wrap { 
-	padding:0!important; 
-	margin:0 auto; 
+.column-wrap {
+	padding:0!important;
+	margin:0 auto;
 	max-width:600px!important;
 }
 .column table { width:100%;}
@@ -188,10 +196,10 @@ ul li {
 /* Be sure to place a .clear element after each set of columns, just to be safe */
 .clear { display: block; clear: both; }
 
-/* ------------------------------------------- 
+/* -------------------------------------------
 		PHONE
 		For clients that support media queries.
-		Nothing fancy. 
+		Nothing fancy.
 -------------------------------------------- */
 @media only screen and (max-width: 600px) {
 	
@@ -202,7 +210,7 @@ ul li {
     #email_right_column {
         background-color: transparent !important;
     }
-    
+
     .hide_mobile {
         display: none;
     }
