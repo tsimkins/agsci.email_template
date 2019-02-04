@@ -16,6 +16,12 @@ img.image-half {
   margin: 10px auto;
   text-align: center; }
 
+img.image-third {
+  max-width: 200px;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center; }
+
 /* -------------------------------------
 		ELEMENTS
 ------------------------------------- */

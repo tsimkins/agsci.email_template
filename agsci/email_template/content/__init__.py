@@ -84,7 +84,7 @@ class IEmailTemplateBase(model.Schema, ILeadImage):
 
     email_image_size = schema.Choice(
         title=_(u"Image Width"),
-        values=(u"Full", u"Half"),
+        values=(u"Full", u"Half", u"Third"),
         required=True,
         default=u"Full",
     )
